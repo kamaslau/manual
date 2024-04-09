@@ -28,10 +28,27 @@ export default defineConfig({
           { text: "Runtime API Examples", link: "/api-examples" },
         ],
       },
+      {
+        text: "DevOps",
+        items: [{ text: "Matomo", link: "/matomo" }],
+      },
     ],
 
+    // https://vitepress.dev/reference/default-theme-config#sociallinks
     socialLinks: [
-      { icon: "github", link: "https://github.com/vuejs/vitepress" },
+      { icon: "github", link: "https://github.com/kamaslau/manual" },
+      { link: "https://www.kamaslau.com/" },
     ],
+
+    footer: {
+      copyright:
+        'Copyright © 2023-present <a href="https://www.kamaslau.com" target="_blank">Kamas Lau</a>',
+    },
+
+    search: {
+      provider: "local",
+    },
+
+    outline: "deep",
   },
 });
