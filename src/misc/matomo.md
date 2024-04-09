@@ -7,13 +7,14 @@
 https://github.com/matomo-org/docker
 
 ```bash
-docker run
-\ -d
-\ -p 8081:80
-\ --restart=always
-\ --network trial-mysql_backend
-\ --link mysql:db
-\ matomo
+docker run \
+  -p 8081:80 \
+  -d \
+  --restart always \
+  --network trial-mysql_backend \
+  --link mysql:db \
+  --name=mongo \
+  matomo
 ```
 
 ## 控制台页面
@@ -61,3 +62,7 @@ return (
   <Matomo /> // ...
 );
 ```
+
+## 相关链接
+
+- [官方网站](https://matomo.org/)

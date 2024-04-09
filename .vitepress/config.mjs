@@ -22,10 +22,12 @@ export default defineConfig({
 
     sidebar: [
       {
-        text: "DevOps",
+        text: "Docker",
         items: [
-          { text: "Build and push", link: "docker/build-and-push" },
-          { text: "Pull and run", link: "docker/pull-and-run" },
+          { text: "Login", link: "docker/login" },
+          { text: "Build", link: "docker/build-and-push" },
+          { text: "Run", link: "docker/pull-and-run" },
+          { text: "Multiple Arch", link: "docker/multi-arch" },
         ],
       },
       {
