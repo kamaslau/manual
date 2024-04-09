@@ -1,10 +1,14 @@
 {
-  "devDependencies": {
-    "vitepress": "^1.0.2"
-  },
+  "name": "manual",
+  "version": "0.1.0",
+  "private": true,
+  "author": "Lau, Kamas <kamaslau@dingtalk.com> (https://www.kamaslau.com/)",
   "scripts": {
     "docs:dev": "vitepress dev",
     "docs:build": "vitepress build",
     "docs:preview": "vitepress preview"
+  },
+  "devDependencies": {
+    "vitepress": "^1.0.2"
   }
 }
