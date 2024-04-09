@@ -22,15 +22,15 @@ export default defineConfig({
 
     sidebar: [
       {
-        text: "Examples",
+        text: "DevOps",
         items: [
-          { text: "Markdown Examples", link: "/markdown-examples" },
-          { text: "Runtime API Examples", link: "/api-examples" },
+          { text: "Build and push", link: "docker/build-and-push" },
+          { text: "Pull and run", link: "docker/pull-and-run" },
         ],
       },
       {
-        text: "DevOps",
-        items: [{ text: "Matomo", link: "/matomo" }],
+        text: "Misc",
+        items: [{ text: "Matomo", link: "misc/matomo" }],
       },
     ],
 
