@@ -1,4 +1,4 @@
-# Docker build and push
+# Docker image: build and push
 
 build.sh
 

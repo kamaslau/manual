@@ -22,6 +22,15 @@ export default defineConfig({
 
     sidebar: [
       {
+        text: "Front-End",
+        items: [
+          {
+            text: "Next.js: Deploy as Docker image",
+            link: "front-end/nextjs-deploy",
+          },
+        ],
+      },
+      {
         text: "Docker",
         items: [
           { text: "Login", link: "docker/login" },

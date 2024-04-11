@@ -1,4 +1,4 @@
-# Docker pull and run
+# Docker image: pull and run
 
 run.sh
 
