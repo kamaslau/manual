@@ -4,7 +4,7 @@
 
 ## 后端
 
-https://github.com/matomo-org/docker
+以下以部署到 `8082` 端口，MySQL 服务所在的网络为`trial-mysql_backend`为例。
 
 ```bash
 docker run \
@@ -17,6 +17,30 @@ docker run \
   --name=matomo \
   matomo
 ```
+
+### 【可选】安装地理位置数据库
+
+为了精确解析访问者的地理位置数据，需要额外安装 IP 数据库，Matomo 推荐使用 [db-ip.com 的免费数据库](https://db-ip.com/db/download/ip-to-city-lite)。
+
+首先，需要将数据库文件下载到容器内：
+
+```bash
+# 进入容器命令行界面
+docker exec -it matomo bash
+
+# 进入 misc 目录
+cd misc
+
+# 下载免费版数据库 MMDB 格式压缩文件
+curl -O https://download.db-ip.com/free/dbip-city-lite-2024-04.mmdb.gz
+
+# 解压缩并重命名
+gzip -d dbip-city-lite-2024-04.mmdb.gz
+mv dbip-city-lite-2024-04.mmdb DBIP-City.mmdb
+exit # 退出命令行
+```
+
+然后，在“设置 → 系统 → 地理位置”页面的“位置信息提供商”部分，点选“DBIP / GeoIP（PHP）”项并点击该部分底部的“保存”按钮，刷新一下页面即可。
 
 ## 控制台页面
 
@@ -67,3 +91,4 @@ return (
 ## 参考资料
 
 - [官方网站](https://matomo.org/)
+- https://github.com/matomo-org/docker
