@@ -8,9 +8,10 @@ https://github.com/matomo-org/docker
 
 ```bash
 docker run \
-  -p 8081:80 \
+  -p 8082:80 \
   -d \
   --restart always \
+  -v matomo_data:/data \
   --network trial-mysql_backend \
   --link mysql:db \
   --name=matomo \
