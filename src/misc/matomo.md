@@ -13,7 +13,7 @@ docker run \
   --restart always \
   --network trial-mysql_backend \
   --link mysql:db \
-  --name=mongo \
+  --name=matomo \
   matomo
 ```
 
