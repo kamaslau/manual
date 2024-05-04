@@ -41,7 +41,10 @@ export default defineConfig({
       },
       {
         text: "Misc",
-        items: [{ text: "Matomo", link: "misc/matomo" }],
+        items: [
+          { text: "Matomo", link: "misc/matomo" },
+          { text: "Jest", link: "nodejs/jest" },
+        ],
       },
     ],
 

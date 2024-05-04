@@ -54,7 +54,7 @@ pnpm test
 
 输出结果如下
 
-```javascript
+```bash
 > jest
 
   console.log
