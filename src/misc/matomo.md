@@ -32,7 +32,7 @@ docker exec -it matomo bash
 cd misc
 
 # 下载免费版数据库 MMDB 格式压缩文件
-curl -O https://download.db-ip.com/free/dbip-city-lite-2024-04.mmdb.gz
+curl -O https://download.db-ip.com/free/dbip-city-lite-2024-05.mmdb.gz
 
 # 解压缩并重命名
 gzip -d dbip-city-lite-2024-04.mmdb.gz
