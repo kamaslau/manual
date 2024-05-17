@@ -35,8 +35,8 @@ cd misc
 curl -O https://download.db-ip.com/free/dbip-city-lite-2024-05.mmdb.gz
 
 # 解压缩并重命名
-gzip -d dbip-city-lite-2024-04.mmdb.gz
-mv dbip-city-lite-2024-04.mmdb DBIP-City.mmdb
+gzip -d dbip-city-lite-2024-05.mmdb.gz
+mv dbip-city-lite-2024-05.mmdb DBIP-City.mmdb
 exit # 退出命令行
 ```
 
