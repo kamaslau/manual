@@ -1,4 +1,4 @@
-# Next.js: Deploy as Docker image
+# Next.js: Deploy with Docker
 
 将 Next.js 应用编译为 Docker 镜像，以供后续部署。
 

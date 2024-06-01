@@ -7,7 +7,7 @@ docker login your_registry_url -u your_username --password-stdin
 # 常见平台示例
 docker login # 不传入Registry路径则默认为 docker.io ，即DockerHub
 docker login ghcr.io # GitHub
-docker login registry.cn-shanghai.aliyuncs.com # 阿里云
+docker login registry.cn-shanghai.aliyuncs.com # 阿里云（需先进行实名认证，并配置可用区）
 ```
 
 ## 参考资料

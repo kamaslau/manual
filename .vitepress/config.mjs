@@ -25,8 +25,12 @@ export default defineConfig({
         text: "Front-End",
         items: [
           {
-            text: "Next.js: Deploy as Docker image",
-            link: "front-end/nextjs-deploy",
+            text: "Next.js: Deploy with Docker",
+            link: "front-end/nextjs-deploy-with-docker",
+          },
+          {
+            text: "Tauri v2 Beta 版本发布公告",
+            link: "front-end/tauri-2-0-0-beta",
           },
         ],
       },
@@ -34,6 +38,10 @@ export default defineConfig({
         text: "Docker",
         items: [
           { text: "Login", link: "docker/login" },
+          {
+            text: "Frequently used commands",
+            link: "docker/docker-commands-frequently-used",
+          },
           { text: "Build", link: "docker/build-and-push" },
           { text: "Run", link: "docker/pull-and-run" },
           { text: "Multiple Arch", link: "docker/multi-arch" },
