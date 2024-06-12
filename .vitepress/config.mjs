@@ -37,6 +37,10 @@ export default defineConfig({
       {
         text: "Docker",
         items: [
+          {
+            text: "Mirror registry in Mainland China",
+            link: "docker/mirror-cn",
+          },
           { text: "Login", link: "docker/login" },
           {
             text: "Frequently used commands",
