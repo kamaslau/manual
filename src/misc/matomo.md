@@ -31,16 +31,19 @@ docker exec -it matomo bash
 # 进入 misc 目录
 cd misc
 
+# 待下载数据所属月份
+year_month=$(date +%Y-%m)
+
 # 下载免费版数据库 MMDB 格式压缩文件
-curl -O https://download.db-ip.com/free/dbip-city-lite-2024-05.mmdb.gz
+curl -O https://download.db-ip.com/free/dbip-city-lite-${year_month}.mmdb.gz
 
 # 解压缩并重命名
-gzip -d dbip-city-lite-2024-05.mmdb.gz
-mv dbip-city-lite-2024-05.mmdb DBIP-City.mmdb
+gzip -d dbip-city-lite-${year_month}.mmdb.gz
+mv dbip-city-lite-${year_month}.mmdb DBIP-City.mmdb
 exit # 退出命令行
 ```
 
-然后，在“设置 → 系统 → 地理位置”页面的“位置信息提供商”部分，点选“DBIP / GeoIP（PHP）”项并点击该部分底部的“保存”按钮，刷新一下页面即可。
+然后，在“设置 → 系统 → 地理位置”页面的“位置信息提供商”部分，点选“DBIP / GeoIP（Php）”项，并点击该部分底部的“保存”按钮，刷新一下页面即可。
 
 ## 控制台页面
 
