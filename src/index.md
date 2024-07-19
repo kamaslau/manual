@@ -3,9 +3,9 @@
 layout: home
 
 hero:
-  name: "Kamas' Manual"
-  text: "How-to instructions from personal experiences of product designing, programming and DevOps skills."
-  tagline: Knowledge base of full-stack developer
+  name: "Kamas' Dev Manual"
+  text: "Personal experiences of product designing, coding and DevOps."
+  tagline: Knowledges of a full-stack developer
   actions:
     - theme: brand
       text: DevOps
@@ -15,10 +15,8 @@ hero:
       link: /misc/matomo
 
 features:
-  - title: 客户端
-    details: HTML、CSS、JavaScript、React.js、Next.js、Vue.js、Nuxt.js、微信小程序、SBC（树莓派）、IoT……
-  - title: 服务端
-    details: Golang、Node.js、Koa.js、TypeScript、PHP、CodeIgniter、Rust……
+  - title: Programming Language / Framework / Runtime
+    details: HTML&CSS、JavaScript/TypeScript、React.js&Next.js、Vue.js&Nuxt.js、Golang、Node.js&Koa.js、PHP&CodeIgniter、Rust、微信小程序、IoT&SBC（树莓派）……
   - title: DevOps
-    details: Git（Gitea、GitHub、GitLab）、Linux（Debian）、Shell……
+    details: Git（Gitea、GitHub、GitLab）、Linux（Debian）、Bash/Shell、K8s……
 ---

@@ -19,10 +19,17 @@ export default defineConfig({
       { text: "Home", link: "/" },
       { text: "Golang", link: "/golang" },
       { text: "Node.js", link: "/nodejs" },
-      { text: "Examples", link: "/markdown-examples" },
+      { text: "Markdown", link: "/markdown-examples" },
     ],
 
     sidebar: [
+      {
+        text: "Programming Language",
+        items: [
+          { text: "Golang", link: "/golang" },
+          { text: "Node.js", link: "/nodejs" },
+        ],
+      },
       {
         text: "Front-End",
         items: [
