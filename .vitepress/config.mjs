@@ -17,6 +17,8 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: "Home", link: "/" },
+      { text: "Golang", link: "/golang" },
+      { text: "Node.js", link: "/nodejs" },
       { text: "Examples", link: "/markdown-examples" },
     ],
 
