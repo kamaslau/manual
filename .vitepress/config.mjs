@@ -44,6 +44,15 @@ export default defineConfig({
         ],
       },
       {
+        text: "Network",
+        items: [
+          {
+            text: "Windows 系统开放本机端口",
+            link: "network/open-port-on-windows",
+          },
+        ],
+      },
+      {
         text: "Docker",
         items: [
           {
