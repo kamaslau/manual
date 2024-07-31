@@ -26,7 +26,7 @@ https://golang.cafe/blog/how-to-upgrade-golang-dependencies.html
 go env // List all preset envs
 go env GOROOT // Root directory in which Golang was installed to.
 go env GOPATH // Other directory(s) from which Golang could import packages.
-go env GOOS GOARCH // Display multiple envs: Operating system and arch
+go env GOOS GOARCH GOVERSION // Display multiple envs: Operating system name, arch, and Golang version
 ```
 
 Set and echo
