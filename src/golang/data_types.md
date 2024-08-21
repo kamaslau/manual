@@ -103,3 +103,14 @@ Give or change value of an item with position index:
 a[2]
 a[2] = 3
 ```
+
+## Pointer
+
+Variable could be a pointer type, a pointer states a memory address.
+
+```golang
+var a *int
+var aPointer = &a // Get the pointer of a
+```
+
+## Slice
