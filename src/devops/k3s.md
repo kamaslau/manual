@@ -1,8 +1,22 @@
 # K3s
 
+## 卸载
+
+### server 节点
+
+```bash
+sh -x /usr/local/bin/k3s-uninstall.sh
+```
+
+### agent 节点
+
+```bash
+sh -x /usr/local/bin/k3s-agent-uninstall.sh
+```
+
 ## 安装
 
-### master 节点
+### server 节点
 
 ```bash
 curl -sfL https://get.k3s.io | sh -
@@ -19,15 +33,15 @@ kubeconfig 文件将写入到 `/etc/rancher/k3s/k3s.yaml`，由 K3s 安装的 ku
 sudo k3s kubectl get node
 ```
 
-### client 节点
+### agent 节点
 
-首先，从 master 节点获取 `node-token`
+首先，从 server 节点获取 `node-token`
 
 ```bash
 cat /var/lib/rancher/k3s/server/node-token
 ```
 
-安装 K3s，并注册为 client 节点：
+安装 K3s，并注册为 agent 节点：
 
 ```bash
 curl -sfL https://get.k3s.io | K3S_URL=https://master_ip_or_url:6443 K3S_TOKEN=your_node_token sh -
