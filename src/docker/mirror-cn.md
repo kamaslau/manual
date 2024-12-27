@@ -18,7 +18,7 @@ sudo tee /etc/docker/daemon.json <<-'EOF'
     "https://docker.m.daocloud.io",
     "https://registry.dockermirror.com",
     "https://docker.1panelproxy.com",
-    "https://docker.udayun.com",
+    "https://docker.udayun.com"
   ]
 }
 EOF
