@@ -72,8 +72,8 @@ export default defineConfig({
       {
         text: "Misc",
         items: [
-          { text: "Matomo", link: "misc/matomo" },
           { text: "Jest", link: "nodejs/jest" },
+          { text: "Matomo", link: "misc/matomo" },
         ],
       },
     ],
@@ -86,7 +86,7 @@ export default defineConfig({
 
     footer: {
       copyright:
-        'Copyright © 2023-present <a href="https://www.kamaslau.com" target="_blank">Kamas Lau</a>',
+        'Copyright © 2023-present <a href="https://www.kamaslau.com/" target="_blank">Kamas Lau</a>',
     },
 
     search: {

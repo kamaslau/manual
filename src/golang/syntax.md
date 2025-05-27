@@ -64,6 +64,6 @@ func main (){
 
 Run with:
 
-```golang
+```bash
 go run main.go -stringVal="argument content"
 ```

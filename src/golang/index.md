@@ -46,7 +46,7 @@ cd trial-golang
 
 Initiate the project module
 
-```go
+```bash
 go mod init example/trial-golang
 ```
 
@@ -69,7 +69,7 @@ func main() {
 
 Run the code to view the output.
 
-```go
+```bash
 go run .
 ```
 

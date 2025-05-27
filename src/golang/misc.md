@@ -4,7 +4,7 @@
 
 ### Package level
 
-```go
+```bash
 go doc fmt
 ```
 
@@ -12,7 +12,7 @@ go doc fmt
 
 Not case sensitive.
 
-```go
+```bash
 go doc fmt.println
 ```
 
@@ -22,7 +22,7 @@ https://golang.cafe/blog/how-to-upgrade-golang-dependencies.html
 
 ## Environment Variables
 
-```golang
+```bash
 go env // List all preset envs
 go env GOROOT // Root directory in which Golang was installed to.
 go env GOPATH // Other directory(s) from which Golang could import packages.
@@ -44,7 +44,7 @@ export set GOOS= GOARCH=
 
 ## Build
 
-```golang
+```bash
 go help build // Show help docs for build command
 go build
   -x // Print build process details

@@ -8,14 +8,14 @@
 
 ```bash
 docker run \
-  -p 8082:80 \
   -d \
-  --restart always \
+  --restart=unless-stopped \
+  -p 8082:80 \
+  --network=trial-mysql_backend \
+  --link=mysql:db \
   -v matomo_data:/data \
-  --network trial-mysql_backend \
-  --link mysql:db \
   --name=matomo \
-  matomo
+  matomo:fpm-alpine
 ```
 
 ### 【可选】安装地理位置数据库
