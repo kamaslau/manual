@@ -15,7 +15,7 @@ docker run \
   --link=mysql:db \
   -v matomo_data:/data \
   --name=matomo \
-  matomo:fpm-alpine
+  matomo
 ```
 
 ### 【可选】安装地理位置数据库
