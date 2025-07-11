@@ -1,6 +1,6 @@
 # Golang
 
-- [Official Site](https://go.dev/)
+- [Official Site](https://go.dev/) and [Playground](https://go.dev/play/)
 - [Docs](https://go.dev/doc/)
 - [Packages](https://pkg.go.dev/)
 - [Installation](https://go.dev/dl/)

@@ -2,19 +2,22 @@
 
 ## Integer
 
-| Signed | Unsigned |
-| ------ | -------- |
-| int8   | uint8    |
-| int16  | uint16   |
-| int32  | uint32   |
-| int64  | uint64   |
+| Signed       | Unsigned     |
+| ------------ | ------------ |
+| int8         | uint8 (byte) |
+| int16        | uint16       |
+| int32 (rune) | uint32       |
+| int64        | uint64       |
 
-Mark directly with _int_, which is the recommended method, would automaticly use the word size of the OS (32/64).
+Mark directly with _int_, which is the recommended method, would automaticly use the word size of the OS (32/64). This is also the case for _uintptr_ and _uint_.
 
 ## Float
 
 - float32
 - float64
+- NaN (Representing non-number values: 0/0, etc.)
+
+Float numbers are not precise, use float64 for maximum approximity.
 
 Check the type of a float variable with _reflect_ package:
 
@@ -34,11 +37,15 @@ Use _math/big_ package to compare 2 floats.
 
 ## Boolean
 
+An integer with a length of 1.
+
 Only `true` or `false` is valid boolean value, `1` or `"true"` won't pass.
 
 ## Character
 
 Single character, define with single quotes. It would be transformed into an interger value represented in utf8.
+
+Usually, each charater in a string represents one byte. Yet for some language, one character is represented with multiple bytes.
 
 ```golang
 var a = 'A'
@@ -46,10 +53,13 @@ var a = 'A'
 
 ## String
 
-Transform a value to string:
+Create a string with _"_ or _`_ symbols.
 
 ```golang
-string(value_to_transform)
+string(abc) // Transform a value to string
+len(xyz) // Get string length
+"abc" + "xyz" // Concat two strings into one
+"CdeXyz"[2] // Get the 3rd character of the string. The output is 101, because single character is represented by a byte (a uint8).
 ```
 
 Escape characters:
