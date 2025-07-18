@@ -124,3 +124,68 @@ var aPointer = &a // Get the pointer of a
 ```
 
 ## Slice
+
+```go
+var x[]float64
+
+// This creates a slice of float64 type with a length of 5 and a capacity of 10. The capacity of the underlying array can be larger than the length of the slice, allowing for future growth.
+x := make([]float64, 5, 10)
+
+// Create a slice from an array
+arr := [5]float64{1,2,3,4,5}
+x := arr[0:5] // the end index is 4, but it is not included so needs to use 5 as ending point index
+x := arr[0:] // till the end, equals to arr[0:len(arr)]
+x := arr[:5] // from the start, equals to arr[0:5]
+x := arr[:] // equals to arr[0:len(arr)]
+```
+
+### Append
+
+```go
+func main() {
+  slice1 := []int{1,2,3}
+  slice2 := append(slice1, 4, 5)
+  fmt.Println(slice1, slice2)
+}
+```
+
+### Copy
+
+```go
+func main() {
+  slice1 := []int{1,2,3}
+  slice2 := make([]int, 2)
+  copy(slice2, slice1)
+  fmt.Println(slice1, slice2)
+}
+```
+
+If length of two slices are not equal, the shorter length will be used.
+
+## Map
+
+```go
+x := make(map[string]int)
+x["key"] = 10
+fmt.Println(x["key"])
+
+// Or
+elements := map[string]string{
+    "H":  "Hydrogen",
+    "He": "Helium",
+}
+```
+
+Check if a key value exists:
+
+```go
+if name, ok := elements["Un"]; ok {
+  fmt.Println(name, ok)
+}
+```
+
+### Delete
+
+```go
+delete(x, 1)
+```
