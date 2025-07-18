@@ -119,8 +119,10 @@ a[2] = 3
 Variable could be a pointer type, a pointer states a memory address.
 
 ```go
-var a *int
-var aPointer = &a // Get the pointer of a
+var a *int // a pointer of int type
+a := new(int) // Initiate a value, then return its pointer
+*a = 0 // Set the value for pointer position
+var aPointer = &a // Get the pointer of variable a
 ```
 
 ## Slice
