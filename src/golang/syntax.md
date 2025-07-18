@@ -2,7 +2,7 @@
 
 ## Comments
 
-```golang
+```go
 // Single Line
 
 /*
@@ -14,7 +14,7 @@
 
 For entry file, the package name must be 'main', and one (only one) main function must exist.
 
-```golang
+```go
 package main
 
 import "fmt"
@@ -30,7 +30,7 @@ func main (){
 
 Get cli arguments:
 
-```golang
+```go
 package main
 import "fmt"
 import "os"
@@ -44,13 +44,13 @@ func main(){
 
 Run with:
 
-```golang
+```go
 go run main.go arg1 arg2 arg3
 ```
 
 ### os.Flag()
 
-```golang
+```go
 package main
 import "flag"
 import "fmt"

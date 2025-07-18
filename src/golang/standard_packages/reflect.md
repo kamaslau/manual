@@ -4,7 +4,7 @@
 
 Get the data type of a value:
 
-```golang
+```go
 var s = "some string"
 reflect.TypeOf(s)
 ```

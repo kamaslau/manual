@@ -21,7 +21,7 @@ Float numbers are not precise, use float64 for maximum approximity.
 
 Check the type of a float variable with _reflect_ package:
 
-```golang
+```go
 package main
 import (
   "fmt"
@@ -47,7 +47,7 @@ Single character, define with single quotes. It would be transformed into an int
 
 Usually, each charater in a string represents one byte. Yet for some language, one character is represented with multiple bytes.
 
-```golang
+```go
 var a = 'A'
 ```
 
@@ -55,7 +55,7 @@ var a = 'A'
 
 Create a string with _"_ or _`_ symbols.
 
-```golang
+```go
 string(abc) // Transform a value to string
 len(xyz) // Get string length
 "abc" + "xyz" // Concat two strings into one
@@ -74,19 +74,19 @@ Escape characters:
 
 Original string:
 
-```golang
+```go
 s := `All characters, for example "c:\Users\kamaslau\Apps" will be displayed as original, no escape signs are needed.`
 ```
 
 获取字符串底层字节数组的长度：
 
-```golang
+```go
 length := len(stringName)
 ```
 
 获取字符串实际字符（rune 类型的字符串）个数：
 
-```golang
+```go
 import "unicode/utf8"
 
 utf8.RuneCountInString(stringName)
@@ -103,13 +103,13 @@ The length of an array is not mutable.
 
 Declare an array with its length and data type:
 
-```golang
+```go
 a := [5]int{1,2,3,4,5}
 ```
 
 Give or change value of an item with position index:
 
-```golang
+```go
 a[2]
 a[2] = 3
 ```
@@ -118,7 +118,7 @@ a[2] = 3
 
 Variable could be a pointer type, a pointer states a memory address.
 
-```golang
+```go
 var a *int
 var aPointer = &a // Get the pointer of a
 ```

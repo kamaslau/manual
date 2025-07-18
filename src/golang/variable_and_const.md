@@ -4,7 +4,7 @@
 
 Initiate variables:
 
-```golang
+```go
 var length int
 
 // Initiate with value
@@ -43,7 +43,7 @@ Zero value for different types:
 
 Initiation:
 
-```golang
+```go
 const a = 10
 
 // Const block
@@ -58,7 +58,7 @@ const (
 
 iota states for the index value of current line in a const block
 
-```golang
+```go
 const (
   Sunday = iota // 0
   Monday // 1
@@ -72,7 +72,7 @@ const (
 
 An anonumous variable could be used to skip an index for iota:
 
-```golang
+```go
 const (
   _ = iota // 0
   Mon // 1
@@ -82,7 +82,7 @@ const (
 
 To set an start value for iota:
 
-```golang
+```go
 const (
   YEAR1 = iota + 2008 // 0 + 2008 = 2008
   YEAR2 // 2009

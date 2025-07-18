@@ -18,7 +18,7 @@ module.exports = nextConfig;
 
 ## .dockerignore
 
-```.dockerignore
+``` docker
 .git
 .next
 node_modules

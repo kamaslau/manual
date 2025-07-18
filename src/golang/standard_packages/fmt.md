@@ -4,7 +4,7 @@
 
 Format and print a string with variable:
 
-```golang
+```go
 fmt.Printf("%c", variable) // %c means raw content
 ```
 
@@ -12,6 +12,6 @@ fmt.Printf("%c", variable) // %c means raw content
 
 Print a new line:
 
-```golang
+```go
 fmt.Println(string(variable))
 ```
