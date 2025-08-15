@@ -1,7 +1,5 @@
-import { defineConfig } from "vitepress";
-
 // https://vitepress.dev/reference/site-config
-export default defineConfig({
+export default {
   title: "Kamas' Manual",
   description:
     "How-to instructions from personal experiences of product designing, programming and DevOps skills.",
@@ -95,4 +93,4 @@ export default defineConfig({
 
     outline: "deep",
   },
-});
+};
