@@ -8,6 +8,7 @@
     "docs:build": "vitepress build",
     "docs:preview": "vitepress preview"
   },
+  "packageManager": "pnpm@10.13.1",
   "devDependencies": {
     "vitepress": "2.0.0-alpha.11"
   }
