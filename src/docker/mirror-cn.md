@@ -9,16 +9,14 @@ sudo mkdir -p /etc/docker
 sudo tee /etc/docker/daemon.json <<-'EOF'
 {
 "registry-mirrors": [
-    "https://bgmg0wzh.mirror.aliyuncs.com",
+    "https://xuanyuan.cloud",
+    "https://docker.xuanyuan.me",
+    "https://registry-docker.kamaslau.com",
     "https://dockerproxy.com",
-    "https://hub.geekery.cn",
-    "https://hub.littlediary.cn",
-    "https://docker.rainbond.cc",
-    "https://docker.unsee.tech",
     "https://docker.m.daocloud.io",
-    "https://registry.dockermirror.com",
-    "https://docker.1panelproxy.com",
-    "https://docker.udayun.com"
+    "https://mirror.baidubce.com",
+    "https://docker.nju.edu.cn",
+    "https://docker.mirrors.sjtug.sjtu.edu.cn"
   ]
 }
 EOF
