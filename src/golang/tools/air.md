@@ -32,16 +32,16 @@ Change executable file path and build command configs under _build_ group from L
 
 ```toml
 [build]
-  bin = "tmp/main"
-  cmd = "go build -o ./tmp/main ./src"
+  entrypoint = "tmp/main"
+  cmd = "go build -o ./tmp/main ./src/cmd"
 ```
 
 To:
 
 ```toml
 [build]
-  bin = "tmp\\main.exe"
-  cmd = "go build -o ./tmp/main.exe ./src"
+  entrypoint = "tmp\\main.exe"
+  cmd = "go build -o ./tmp/main.exe ./src/cmd"
 ```
 
 Now you could get _air_ work with specified config file for Windows OS, while the Linux/macOS work spaces remains working.
