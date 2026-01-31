@@ -8,7 +8,7 @@ export default {
     lineNumbers: true,
   },
   sitemap: {
-    hostname: "https://devea-translations.kamaslau.com",
+    hostname: "https://manual.kamaslau.com",
   },
   srcDir: "./src",
   themeConfig: {
@@ -20,61 +20,77 @@ export default {
       { text: "Markdown", link: "/markdown-examples" },
     ],
 
-    sidebar: [
-      {
-        text: "Programming Language",
-        items: [
-          { text: "Golang", link: "/golang" },
-          { text: "Node.js", link: "/nodejs" },
-        ],
-      },
-      {
-        text: "Front-End",
-        items: [
-          {
-            text: "Next.js: Deploy with Docker",
-            link: "front-end/nextjs-deploy-with-docker",
-          },
-          {
-            text: "Tauri v2 Beta 版本发布公告",
-            link: "front-end/tauri-2-0-0-beta",
-          },
-        ],
-      },
-      {
-        text: "Network",
-        items: [
-          {
-            text: "Windows 系统开放本机端口",
-            link: "network/open-port-on-windows",
-          },
-        ],
-      },
-      {
-        text: "Docker",
-        items: [
-          {
-            text: "Mirror registry in Mainland China",
-            link: "docker/mirror-cn",
-          },
-          { text: "Login", link: "docker/login" },
-          {
-            text: "Frequently used commands",
-            link: "docker/docker-commands-frequently-used",
-          },
-          { text: "Build", link: "docker/build-and-push" },
-          { text: "Run", link: "docker/pull-and-run" },
-          { text: "Multiple Arch", link: "docker/multi-arch" },
-        ],
-      },
-      {
-        text: "Misc",
-        items: [
-          { text: "Jest", link: "nodejs/jest" },
-          { text: "Matomo", link: "misc/matomo" },
-        ],
-      },
-    ],
+    sidebar: {
+      "/": [
+        {
+          text: "Front-End",
+          items: [
+            {
+              text: "Next.js: Deploy with Docker",
+              link: "front-end/nextjs-deploy-with-docker",
+            },
+            {
+              text: "Tauri v2 Beta 版本发布公告",
+              link: "front-end/tauri-2-0-0-beta",
+            },
+          ],
+        },
+        {
+          text: "Docker",
+          items: [
+            {
+              text: "Mirror registry in Mainland China",
+              link: "docker/mirror-cn",
+            },
+            { text: "Login", link: "docker/login" },
+            {
+              text: "Frequently used commands",
+              link: "docker/docker-commands-frequently-used",
+            },
+            { text: "Build", link: "docker/build-and-push" },
+            { text: "Run", link: "docker/pull-and-run" },
+            { text: "Multiple Arch", link: "docker/multi-arch" },
+          ],
+        },
+        {
+          text: "Misc",
+          items: [
+            { text: "Matomo", link: "misc/matomo" },
+            {
+              text: "Windows 系统开放本机端口",
+              link: "misc/open-port-on-windows",
+            },
+          ],
+        },
+      ],
+
+      "/golang/": [
+        {
+          text: "Golang",
+          link: "/golang",
+          items: [
+            { text: "Installation", link: "/golang/install" },
+            { text: "Syntax", link: "/golang/syntax" },
+            { text: "Misc", link: "/golang/misc" },
+            { text: "Data Types", link: "/golang/data_types" },
+            { text: "Variable and Const", link: "/golang/variable_and_const" },
+            { text: "Function", link: "/golang/function" },
+            { text: "Interface", link: "/golang/interface" },
+            { text: "Struct", link: "/golang/struct" },
+            { text: "Control Structures", link: "/golang/control_structures" },
+            { text: "Goroutine", link: "/golang/goroutine" },
+            { text: "Test", link: "/golang/test" },
+          ],
+        },
+      ],
+      "/nodejs/": [
+        {
+          text: "Node.js",
+          link: "/nodejs",
+          items: [{ text: "Jest", link: "/nodejs/jest" }],
+        },
+      ],
+    },
 
     // https://vitepress.dev/reference/default-theme-config#sociallinks
     socialLinks: [
