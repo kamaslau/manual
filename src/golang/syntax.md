@@ -1,5 +1,20 @@
 # Syntax
 
+## Log
+
+Echo variable of any type in console:
+
+```go
+fmt.Printf("data: %v", name)
+log.Printf("data: %v", name) // timestamp + fmt.Printf
+
+slog.Info("brief message",
+  slog.String("name", name),
+  slog.Int("age", age),
+  slog.Any("data: ", name),
+)
+```
+
 ## Comments
 
 ```go
