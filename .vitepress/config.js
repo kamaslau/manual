@@ -55,6 +55,10 @@ export default {
         {
           text: "Misc",
           items: [
+            {
+              text: "WeChat Public Account",
+              link: "misc/wechat-public-account.md",
+            },
             { text: "Matomo", link: "misc/matomo" },
             {
               text: "Windows 系统开放本机端口",
