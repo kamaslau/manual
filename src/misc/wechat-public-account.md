@@ -13,6 +13,9 @@ To establish a WPA account, the following items are required.
 _For photos, images should be provided in jpg(jpeg)/png format less then 500kb in size and all 4 corners should be revealed for document or card._
 
 - [ ] An email account as auth code recipient‌
+- [ ] Corparate infomation
+  - 企业名称
+  - 营业执照注册号
 - [ ] \[Deferable\] An Avatar image in square shape
 - [ ] Photo of ID document of the enterprise law person
 - [x] Photo of ID document of one Chinese citizen as operator/liaison, if law person is not Chinese (political, not ethnical)
